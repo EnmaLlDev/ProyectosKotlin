@@ -10,17 +10,29 @@ fun main(){
     }
 }
 
+fun crearCasa(casa: Array<CharArray>) {
+    for (planta in casa.indices){
+        for (hab in casa[planta].indices){
+            casa[planta][hab]='X'
+        }
+    }
+}
+
 fun imprimirCasa(casa: Array<CharArray>) {
-    TODO("Not yet implemented")
+    for (planta in casa.indices){
+        for (hab in casa[planta].indices){
+            print("[${casa[planta][hab]}]")
+        }
+        println()
+    }
+    println()
 }
 
 fun rodearRata(casa: Array<CharArray>, pRata: Int, hRata: Int) {
 
 }
 
-fun crearCasa(casa: Array<CharArray>) {
-    TODO("Not yet implemented")
-}
+
 
 
 
